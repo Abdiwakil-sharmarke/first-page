@@ -1,0 +1,85 @@
+/* Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1400px;
+}
+
+/* Card */
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    width: 100%; 
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+/* Mobile:*/
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+
+/* Tablets: */
+@media (min-width: 481px) and (max-width: 768px) {
+    .card {
+        width: 48%;
+    }
+}
+
+/* Laptops & Desktops:*/
+@media (min-width: 769px) and (max-width: 1440px) {
+    .card {
+        width: 30%;
+    }
+}
+
+/* Large Screens: */
+@media (min-width: 1441px) {
+    .container {
+        max-width: 1600px;
+    }
+    .card {
+        width: 22%;
+    }
+}
